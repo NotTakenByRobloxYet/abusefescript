@@ -1,0 +1,135 @@
+ --[[
+░█████╗░██████╗░███████╗██████╗░██╗████████╗░██████╗  ████████╗░█████╗░
+██╔══██╗██╔══██╗██╔════╝██╔══██╗██║╚══██╔══╝██╔════╝  ╚══██╔══╝██╔══██╗
+██║░░╚═╝██████╔╝█████╗░░██║░░██║██║░░░██║░░░╚█████╗░  ░░░██║░░░██║░░██║
+██║░░██╗██╔══██╗██╔══╝░░██║░░██║██║░░░██║░░░░╚═══██╗  ░░░██║░░░██║░░██║
+╚█████╔╝██║░░██║███████╗██████╔╝██║░░░██║░░░██████╔╝  ░░░██║░░░╚█████╔╝
+░╚════╝░╚═╝░░╚═╝╚══════╝╚═════╝░╚═╝░░░╚═╝░░░╚═════╝░  ░░░╚═╝░░░░╚════╝░
+
+░█████╗░██████╗░██╗░░░██╗░██████╗███████╗  ███████╗███████╗  ░██████╗░█████╗░██████╗░██╗██████╗░████████╗
+██╔══██╗██╔══██╗██║░░░██║██╔════╝██╔════╝  ██╔════╝██╔════╝  ██╔════╝██╔══██╗██╔══██╗██║██╔══██╗╚══██╔══╝
+███████║██████╦╝██║░░░██║╚█████╗░█████╗░░  █████╗░░█████╗░░  ╚█████╗░██║░░╚═╝██████╔╝██║██████╔╝░░░██║░░░
+██╔══██║██╔══██╗██║░░░██║░╚═══██╗██╔══╝░░  ██╔══╝░░██╔══╝░░  ░╚═══██╗██║░░██╗██╔══██╗██║██╔═══╝░░░░██║░░░
+██║░░██║██████╦╝╚██████╔╝██████╔╝███████╗  ██║░░░░░███████╗  ██████╔╝╚█████╔╝██║░░██║██║██║░░░░░░░░██║░░░
+╚═╝░░╚═╝╚═════╝░░╚═════╝░╚═════╝░╚══════╝  ╚═╝░░░░░╚══════╝  ╚═════╝░░╚════╝░╚═╝░░╚═╝╚═╝╚═╝░░░░░░░░╚═╝░░░
+--]]
+-- Instances:
+
+local ABUSEFEGUI = Instance.new("ScreenGui")
+local Frame = Instance.new("ImageLabel")
+local Speed = Instance.new("Folder")
+local TurnOnSpeed = Instance.new("TextButton")
+local TurnOFFSpeed = Instance.new("TextButton")
+local GodMode = Instance.new("Folder")
+local GodMode_2 = Instance.new("TextButton")
+local Fly = Instance.new("Folder")
+local FLY = Instance.new("TextButton")
+local CtlrToTP = Instance.new("Folder")
+local TP = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+
+--Properties:
+
+ABUSEFEGUI.Name = "ABUSE FE GUI"
+ABUSEFEGUI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+Frame.Name = "Frame"
+Frame.Parent = ABUSEFEGUI
+Frame.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Frame.BackgroundTransparency = 1.000
+Frame.Position = UDim2.new(0.204982504, 0, 0.190025166, 0)
+Frame.Size = UDim2.new(0, 580, 0, 424)
+Frame.Image = "rbxassetid://3570695787"
+Frame.ImageColor3 = Color3.fromRGB(24, 24, 24)
+Frame.ScaleType = Enum.ScaleType.Slice
+Frame.SliceCenter = Rect.new(100, 100, 100, 100)
+Frame.SliceScale = 0.240
+
+Speed.Name = "Speed"
+Speed.Parent = Frame
+
+TurnOnSpeed.Name = "TurnOnSpeed"
+TurnOnSpeed.Parent = Speed
+TurnOnSpeed.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+TurnOnSpeed.Position = UDim2.new(0.510344803, 0, 0.0849056616, 0)
+TurnOnSpeed.Size = UDim2.new(0, 200, 0, 64)
+TurnOnSpeed.Font = Enum.Font.SourceSans
+TurnOnSpeed.Text = "Speed"
+TurnOnSpeed.TextColor3 = Color3.fromRGB(255, 255, 255)
+TurnOnSpeed.TextScaled = true
+TurnOnSpeed.TextSize = 14.000
+TurnOnSpeed.TextStrokeTransparency = 0.000
+TurnOnSpeed.TextWrapped = true
+
+TurnOFFSpeed.Name = "TurnOFFSpeed"
+TurnOFFSpeed.Parent = Speed
+TurnOFFSpeed.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+TurnOFFSpeed.Position = UDim2.new(0.860344768, 0, 0.094339624, 0)
+TurnOFFSpeed.Size = UDim2.new(0, 81, 0, 55)
+TurnOFFSpeed.Font = Enum.Font.SourceSans
+TurnOFFSpeed.Text = "OFF"
+TurnOFFSpeed.TextColor3 = Color3.fromRGB(255, 255, 255)
+TurnOFFSpeed.TextScaled = true
+TurnOFFSpeed.TextSize = 14.000
+TurnOFFSpeed.TextStrokeTransparency = 0.000
+TurnOFFSpeed.TextWrapped = true
+
+GodMode.Name = "GodMode"
+GodMode.Parent = Frame
+
+GodMode_2.Name = "GodMode"
+GodMode_2.Parent = GodMode
+GodMode_2.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+GodMode_2.Position = UDim2.new(0.512068927, 0, 0.308962256, 0)
+GodMode_2.Size = UDim2.new(0, 200, 0, 64)
+GodMode_2.Font = Enum.Font.SourceSans
+GodMode_2.Text = "GODMODE"
+GodMode_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+GodMode_2.TextScaled = true
+GodMode_2.TextSize = 14.000
+GodMode_2.TextStrokeTransparency = 0.000
+GodMode_2.TextWrapped = true
+
+Fly.Name = "Fly"
+Fly.Parent = Frame
+
+FLY.Name = "FLY"
+FLY.Parent = Fly
+FLY.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+FLY.Position = UDim2.new(0.515517235, 0, 0.535377383, 0)
+FLY.Size = UDim2.new(0, 200, 0, 64)
+FLY.Font = Enum.Font.SourceSans
+FLY.Text = "FLY"
+FLY.TextColor3 = Color3.fromRGB(255, 255, 255)
+FLY.TextScaled = true
+FLY.TextSize = 14.000
+FLY.TextStrokeTransparency = 0.000
+FLY.TextWrapped = true
+
+CtlrToTP.Name = "Ctlr To TP"
+CtlrToTP.Parent = Frame
+
+TP.Name = "TP"
+TP.Parent = CtlrToTP
+TP.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+TP.Position = UDim2.new(0.0948275924, 0, 0.0778302252, 0)
+TP.Size = UDim2.new(0, 200, 0, 64)
+TP.Font = Enum.Font.SourceSans
+TP.Text = "Ctlr"
+TP.TextColor3 = Color3.fromRGB(255, 255, 255)
+TP.TextScaled = true
+TP.TextSize = 14.000
+TP.TextStrokeTransparency = 0.000
+TP.TextWrapped = true
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.0706896558, 0, 0.882075489, 0)
+TextLabel.Size = UDim2.new(0, 511, 0, 50)
+TextLabel.Font = Enum.Font.GothamBlack
+TextLabel.Text = " ABUSE FE GUI"
+TextLabel.TextColor3 = Color3.fromRGB(255, 85, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
